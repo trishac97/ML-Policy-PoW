@@ -26,12 +26,7 @@ public class StringUtil {
 				if(hexString.length() == 1) hashString.append('0');
 					hashString.append(hexString);					
 			}	
-		
-			
-			
 			return hashString.toString();
-		
-		
 	}
 	
 	//Returns difficulty string target, to compare to hash. eg difficulty of 5 will return "00000"  
