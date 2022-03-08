@@ -44,18 +44,16 @@ public class ClientSide {
 	}
 	 public ClientSide findPuzzleSol() throws UnsupportedEncodingException, NoSuchAlgorithmException{
 			
-		 ClientSide client = new ClientSide();
+		 	ClientSide client = new ClientSide();
 			
-			//System.out.println("Inside findpuzzle"+reqID+r_string+difficulty);
-			//Create the puzzle instance
+			
 			Puzzle puzzle= new Puzzle(reqID,r_string,difficulty);
 			
-		    // System.out.println("In dummychain"+difficulty);
-		     //Solve for POW
+		    
 		     client  = puzzle.POW(difficulty);
 
 	        return client;
-		}
-    
-    
+	}
+	 
+	 
 }

@@ -65,7 +65,7 @@ public class Puzzle {
 			//System.out.println(binaryResult);
 			hash = calculateHash();
 		}
-		//System.out.println("POW Successful : " + hash);
+		System.out.println("POW Successful : " + binaryResult);
 		ClientSide clientobj = new ClientSide();
 		clientobj.setNonce(Integer.toString(nonce));
 		clientobj.setHash_solution(hash);
