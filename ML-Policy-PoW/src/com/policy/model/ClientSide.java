@@ -42,18 +42,7 @@ public class ClientSide {
 	public void setHash_solution(String hash_solution) {
 		this.hash_solution = hash_solution;
 	}
-	 public ClientSide findPuzzleSol() throws UnsupportedEncodingException, NoSuchAlgorithmException{
-			
-		 	ClientSide client = new ClientSide();
-			
-			
-			Puzzle puzzle= new Puzzle(reqID,r_string,difficulty);
-			
-		    
-		     client  = puzzle.POW(difficulty);
-
-	        return client;
-	}
+	
 	 
 	 
 }
