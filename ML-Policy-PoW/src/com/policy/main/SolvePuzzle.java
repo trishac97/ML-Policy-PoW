@@ -9,6 +9,7 @@ import java.util.Random;
 import com.policy.model.ClientSide;
 import com.policy.policies.Policy1;
 import com.policy.policies.Policy2;
+import com.policy.policies.Policy3;
 import com.policy.puzzle.Puzzle;
 
 public class SolvePuzzle {
@@ -17,13 +18,16 @@ public class SolvePuzzle {
 		
 		long startTime = System.currentTimeMillis();
 		long elapsedTime = 0L;	
-		float reputation = (float) 11.9;
+		float reputation = (float) 10.0;
 		float epsilon = (float) 0.2; //DaBR epsilon ~20%
 
 		//Policy 1:
 		Policy1 p1obj = new Policy1(reputation);
 		//Policy 2:
 		Policy2 p2obj = new Policy2(reputation);
+		//Policy 3:
+		Policy3 p3obj = new Policy3(reputation);
+
 
 		ClientSide clientobj = new ClientSide();
 		clientobj.setR_string("110110"); // Random string seed, changes every t seconds
@@ -32,7 +36,9 @@ public class SolvePuzzle {
 		//Policy 1
 		clientobj.setDifficulty(p1obj.getDifficulty());
 		//Policy 2
-//		clientobj.setDifficulty(p2obj.getDifficulty());
+		clientobj.setDifficulty(p2obj.getDifficulty());
+		System.out.println(p2obj.getDifficulty());
+		clientobj.setDifficulty(p3obj.getDifficulty());
 		
 		Puzzle puzzle= new Puzzle(clientobj.getReqID(),clientobj.getR_string(),clientobj.getDifficulty());
 		puzzle.POW(clientobj.getDifficulty());		
