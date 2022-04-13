@@ -1,4 +1,4 @@
-# ML-Policy-PoW
+# A Policy Driven AI-Assisted PoW Framework
 
 Proof of Work (PoW) based cyberdefense systems
 require incoming network requests to expend effort solving
