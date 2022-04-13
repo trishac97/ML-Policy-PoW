@@ -14,4 +14,4 @@ incurring longer latency than authentic requests to receive a
 response from the server. Our preliminary findings reveal our
 approach effectively throttles untrustworthy traffic.
 
-This repository contains code related to our work A Policy Driven AI-Assisted PoW Framework. This is a published work The 52nd Annual IEEE/IFIP International Conference on Dependable Systems and Networks.
+This repository contains code related to our work A Policy Driven AI-Assisted PoW Framework. This work is published in the 52nd Annual IEEE/IFIP International Conference on Dependable Systems and Networks.
